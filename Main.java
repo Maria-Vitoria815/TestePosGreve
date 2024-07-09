@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Escolha a ação que deseja realizar:\n\n");
+            System.out.println("Escolha a ação que deseja realizar:\n");
             System.out.println("1. Cadastrar Funcionário");
             System.out.println("2. Listar Funcionários");
             System.out.println("3. Cadastrar Empresa");
@@ -19,7 +19,7 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    System.out.println("Preencha as informações abaixo:\n\n");
+                    System.out.println("Preencha as informações abaixo:\n");
                     System.out.println("CPF: ");
                     String cpf = scanner.nextLine();
                     System.out.println("Nome: ");
@@ -32,13 +32,13 @@ public class Main {
                     rnFuncionario.cadastrarFuncionario(funcionario);
                     break;
                 case 2:
-                    System.out.println("Funcionários cadastrados:\n\n");
+                    System.out.println("Funcionários cadastrados:\n");
                     for (Funcionario f : rnFuncionario.listarFuncionario()) {
                         System.out.println(f);
                     }
                     break;
                 case 3:
-                    System.out.println("Preencha as informações abaixo:\n\n");
+                    System.out.println("Preencha as informações abaixo:\n");
                     System.out.println("CNPJ: ");
                     String cnpj = scanner.nextLine();
                     System.out.println("Nome: ");
